@@ -1,0 +1,1 @@
+读一下test.v，这个文件在DC综合的时候，报如下错误：Error: In design 'U_B', input port 'B_PD_mtcmos_ctrl' is not being used in accordance with its stated direction. (LINT-69). 以及一个warning: In inst U_B, input port 'B_PD_mtcmos_ctrl' drives wired logic; the port direction may have been specified incorrectly. (LINT-6). 我已经检视过代码了，没发现问题，在模块B中，B_PD.mtcmos_rdy是输出，B_PD.mtcmos_ctrl是输入，这个赋值完全没问题。那到底是哪有问题？
